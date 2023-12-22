@@ -16,9 +16,11 @@ function createChessboard() {
   return chessboard;
 }
 
+
 function isValidPosition(x, y) {
   return (x >= 0 && x < 8 && y >= 0 && y < 8) ? true : false;
 }
+
 
 function possibleKnightMoves([x, y]) {
   const possibleMoves = [];
@@ -74,6 +76,7 @@ function knightMoves(startPosition, destination) {
     } 
   }
 }
+
 
 // Fix the case when length is only 1
 function results(path) {
