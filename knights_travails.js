@@ -96,10 +96,10 @@ function knightMoves(startPosition, destination) {
 
 function printResults(path) {
   // Minus 1 removes the start position count
-  let moves = path.length - 1
+  const moves = path.length - 1
 
   if (path.length === 1) {
-    console.log('=> Your start position is your destination.')
+    console.log(`=> You're already at your destination.`)
   } else if (path.length === 2) {
     console.log(`=> You made it in 1 move! Here's your path:`)
   } else {
